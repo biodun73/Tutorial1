@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <!--style all-->
+    <style>
+        body{
+            background-color: darkcyan;
+        }
+        #loader{
+            width: 120px;
+            height: 120px;
+            border: 40px solid blue;
+            border-top:40px solid red;
+            border-bottom:40px solid white;
+            border-radius: 50%;
+            z-index: 1;
+            margin-left: 400px;
+            margin-top: 150px;
+            animation: spin 6s linear infinite;
+        }
+        #display-image{
+            display: none;
+        }
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+           to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<!--display when refresh the browser-->
+<body onload="displayImage()">
+    <!--loader-->
+    <div id="loader"></div>
+    <!--div for image-->
+    <div id="display-image">
+        <!--Heading-->
+        <h1 style="text-align: center;">LUXURY CAR</h1>
+        <!--image to display after spinnig-->
+        <img src="CITYPICS/car5.png" alt="car 5" style="margin-left: 200px;">
+    </div>
+    <!--javascript code that will display image after loader spin for 6s-->
+    <script>
+        function displayImage(){
+          setInterval(spinLoader,4000);
+        }
+        function spinLoader(){
+            document.getElementById("loader").style.display="none";
+            document.getElementById("display-image").style.display="block";
+        }
+    </script>
+</body>
+</html>

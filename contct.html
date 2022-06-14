@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact form</title>
+	<!--style-->
+	<style>
+		body{
+			background-color: black;
+		}
+		.contact{
+			margin-top: 50px;
+			margin-left: 400px;
+			font-weight: bold;
+			font-size: 25px;
+			color: white;
+		}
+		button{
+			width: 150px;
+			font-size: 25px;
+			border-radius: 5px;
+			color: white;
+			background-color: black;
+		}
+		#sect{
+			font-size: 20px;
+			color: white;
+			background-color: black;
+		}
+		fieldset{
+			margin-left: 5px;
+			width: 600px;
+		}
+	</style>
+</head>
+<body>
+	<!--div-->
+	<div class="contact">
+	  <!--form-->
+	  <form action="POST" action="">
+        <fieldset>
+			<legend>CONTACT FORM</legend>
+			 <label for="text">Course</label><br>
+			 <select name="select" id="sect">
+				 <option value="">Java</option>
+				 <option value="">Javascript</option>
+				 <option value="">PHP</option>
+				 <option value="">HTML/CSS</option>
+			 </select><br>
+			 <label for="text">Firstname</label><br>
+			  <input type="text" name="first"><br>
+			 <label for="text">Lastname</label><br>
+			 <input type="text" name="last"><br>
+			 <label for="text">Address</label><br>
+			 <input type="text" name="address"><br>
+			 <label for="text">Email</label><br>
+			 <input type="text" name="email"  size="40px"><br><br>
+			 <textarea name="" id="" cols="70" rows="5">Enter comments</textarea><br>
+			 <label for="">Male</label>
+			 <input type="radio" name="">
+			 <label for="">Female</label>
+			 <input type="radio" name=""><br>
+			 <button type="submit">Submit</button>
+        </fieldset>
+	  </form>
+	</div>
+</body>
+</html>
